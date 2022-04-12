@@ -13,7 +13,7 @@ function App() {
     <AmplifyProvider>
       <NavBar />
       <div className="App">
-        <h1>New Homes</h1>
+        <h1>New Homes - Ignite Test</h1>
         <NewHomes  />
       </div>
       <MarketingFooter />
