@@ -7,18 +7,7 @@
 /* eslint-disable */
 import React from "react";
 import { getOverrideProps } from "@aws-amplify/ui-react/internal";
-import {
-  Divider,
-  Flex,
-  IconFavorite,
-  IconFavoriteBorder,
-  IconMoreHoriz,
-  IconReply,
-  IconShare,
-  IconShuffle,
-  Image,
-  Text,
-} from "@aws-amplify/ui-react";
+import { Divider, Flex, Icon, Image, Text } from "@aws-amplify/ui-react";
 export default function SocialB(props) {
   const { overrides: overridesProp, ...rest } = props;
   const overrides = { ...overridesProp };
@@ -34,9 +23,9 @@ export default function SocialB(props) {
       {...getOverrideProps(overrides, "Flex")}
     >
       <Divider
-        width="608px"
         shrink="0"
         alignSelf="stretch"
+        objectFit="cover"
         size="small"
         orientation="horizontal"
         {...getOverrideProps(overrides, "Flex.Divider[0]")}
@@ -47,6 +36,7 @@ export default function SocialB(props) {
         alignItems="flex-start"
         shrink="0"
         alignSelf="stretch"
+        objectFit="cover"
         position="relative"
         padding="0px 0px 0px 0px"
         {...getOverrideProps(overrides, "Flex.Flex[0]")}
@@ -61,26 +51,22 @@ export default function SocialB(props) {
           padding="0px 0px 0px 0px"
           {...getOverrideProps(overrides, "Flex.Flex[0].Flex[0]")}
         >
-          <IconFavorite
+          <Icon
             width="24px"
             height="24px"
             shrink="0"
             overflow="hidden"
             position="relative"
             padding="0px 0px 0px 0px"
-            color="rgba(13.000000175088644,26.000000350177288,38.0000015348196,1)"
             type="favorite"
             fontSize="24px"
-            {...getOverrideProps(
-              overrides,
-              "Flex.Flex[0].Flex[0].IconFavorite[0]"
-            )}
-          ></IconFavorite>
+            {...getOverrideProps(overrides, "Flex.Flex[0].Flex[0].Icon[0]")}
+          ></Icon>
           <Text
             fontFamily="Inter"
             fontSize="14px"
             fontWeight="400"
-            color="rgba(92.00000211596489,102.00000151991844,112.000000923872,1)"
+            color="rgba(92,102,112,1)"
             lineHeight="24px"
             textAlign="left"
             display="flex"
@@ -89,6 +75,7 @@ export default function SocialB(props) {
             shrink="0"
             position="relative"
             padding="0px 0px 0px 0px"
+            whiteSpace="pre-wrap"
             children="Danny liked this"
             {...getOverrideProps(overrides, "Flex.Flex[0].Flex[0].Text[0]")}
           ></Text>
@@ -100,6 +87,7 @@ export default function SocialB(props) {
         alignItems="flex-start"
         shrink="0"
         alignSelf="stretch"
+        objectFit="cover"
         position="relative"
         padding="0px 0px 0px 0px"
         {...getOverrideProps(overrides, "Flex.Flex[1]")}
@@ -130,6 +118,7 @@ export default function SocialB(props) {
             alignItems="flex-start"
             shrink="0"
             alignSelf="stretch"
+            objectFit="cover"
             position="relative"
             padding="0px 0px 0px 0px"
             {...getOverrideProps(overrides, "Flex.Flex[1].Flex[0].Flex[0]")}
@@ -151,16 +140,17 @@ export default function SocialB(props) {
                 fontFamily="Inter"
                 fontSize="16px"
                 fontWeight="400"
-                color="rgba(13.000000175088644,26.000000350177288,38.0000015348196,1)"
+                color="rgba(13,26,38,1)"
                 lineHeight="24px"
                 textAlign="left"
                 display="flex"
                 direction="column"
                 justifyContent="flex-start"
-                letterSpacing="0.010000000000000009px"
+                letterSpacing="0.01px"
                 shrink="0"
                 position="relative"
                 padding="0px 0px 0px 0px"
+                whiteSpace="pre-wrap"
                 children="Author"
                 {...getOverrideProps(
                   overrides,
@@ -171,16 +161,17 @@ export default function SocialB(props) {
                 fontFamily="Inter"
                 fontSize="16px"
                 fontWeight="400"
-                color="rgba(92.00000211596489,102.00000151991844,112.000000923872,1)"
+                color="rgba(92,102,112,1)"
                 lineHeight="24px"
                 textAlign="left"
                 display="flex"
                 direction="column"
                 justifyContent="flex-start"
-                letterSpacing="0.010000000000000009px"
+                letterSpacing="0.01px"
                 shrink="0"
                 position="relative"
                 padding="0px 0px 0px 0px"
+                whiteSpace="pre-wrap"
                 children="Timestamp"
                 {...getOverrideProps(
                   overrides,
@@ -191,16 +182,17 @@ export default function SocialB(props) {
                 fontFamily="Inter"
                 fontSize="16px"
                 fontWeight="400"
-                color="rgba(92.00000211596489,102.00000151991844,112.000000923872,1)"
+                color="rgba(92,102,112,1)"
                 lineHeight="24px"
                 textAlign="left"
                 display="flex"
                 direction="column"
                 justifyContent="flex-start"
-                letterSpacing="0.010000000000000009px"
+                letterSpacing="0.01px"
                 shrink="0"
                 position="relative"
                 padding="0px 0px 0px 0px"
+                whiteSpace="pre-wrap"
                 children="Lorem ipsum"
                 {...getOverrideProps(
                   overrides,
@@ -224,39 +216,39 @@ export default function SocialB(props) {
                 "Flex.Flex[1].Flex[0].Flex[0].Flex[1]"
               )}
             >
-              <IconMoreHoriz
+              <Icon
                 width="24px"
                 height="24px"
                 shrink="0"
                 overflow="hidden"
                 position="relative"
                 padding="0px 0px 0px 0px"
-                color="rgba(13.000000175088644,26.000000350177288,38.0000015348196,1)"
                 type="more_horiz"
                 fontSize="24px"
                 {...getOverrideProps(
                   overrides,
-                  "Flex.Flex[1].Flex[0].Flex[0].Flex[1].IconMoreHoriz[0]"
+                  "Flex.Flex[1].Flex[0].Flex[0].Flex[1].Icon[0]"
                 )}
-              ></IconMoreHoriz>
+              ></Icon>
             </Flex>
           </Flex>
           <Text
             fontFamily="Inter"
             fontSize="16px"
             fontWeight="400"
-            color="rgba(13.000000175088644,26.000000350177288,38.0000015348196,1)"
+            color="rgba(13,26,38,1)"
             lineHeight="24px"
             textAlign="left"
             display="flex"
             direction="column"
             justifyContent="flex-start"
-            letterSpacing="0.010000000000000009px"
-            width="512px"
+            letterSpacing="0.01px"
             shrink="0"
             alignSelf="stretch"
+            objectFit="cover"
             position="relative"
             padding="0px 0px 0px 0px"
+            whiteSpace="pre-wrap"
             children="“Lorem ipsum dolor sit amet, consectetur adipiscing elit. ”"
             {...getOverrideProps(overrides, "Flex.Flex[1].Flex[0].Text[0]")}
           ></Text>
@@ -268,6 +260,7 @@ export default function SocialB(props) {
         alignItems="flex-start"
         shrink="0"
         alignSelf="stretch"
+        objectFit="cover"
         position="relative"
         padding="0px 0px 0px 0px"
         {...getOverrideProps(overrides, "Flex.Flex[2]")}
@@ -282,35 +275,32 @@ export default function SocialB(props) {
           padding="0px 0px 0px 0px"
           {...getOverrideProps(overrides, "Flex.Flex[2].Flex[0]")}
         >
-          <IconReply
+          <Icon
             width="24px"
             height="24px"
             shrink="0"
             overflow="hidden"
             position="relative"
             padding="0px 0px 0px 0px"
-            color="rgba(13.000000175088644,26.000000350177288,38.0000015348196,1)"
             type="reply"
             fontSize="24px"
-            {...getOverrideProps(
-              overrides,
-              "Flex.Flex[2].Flex[0].IconReply[0]"
-            )}
-          ></IconReply>
+            {...getOverrideProps(overrides, "Flex.Flex[2].Flex[0].Icon[0]")}
+          ></Icon>
           <Text
             fontFamily="Inter"
             fontSize="16px"
             fontWeight="400"
-            color="rgba(13.000000175088644,26.000000350177288,38.0000015348196,1)"
+            color="rgba(13,26,38,1)"
             lineHeight="24px"
             textAlign="left"
             display="flex"
             direction="column"
             justifyContent="flex-start"
-            letterSpacing="0.010000000000000009px"
+            letterSpacing="0.01px"
             shrink="0"
             position="relative"
             padding="0px 0px 0px 0px"
+            whiteSpace="pre-wrap"
             children="99"
             {...getOverrideProps(overrides, "Flex.Flex[2].Flex[0].Text[0]")}
           ></Text>
@@ -325,35 +315,32 @@ export default function SocialB(props) {
           padding="0px 0px 0px 0px"
           {...getOverrideProps(overrides, "Flex.Flex[2].Flex[1]")}
         >
-          <IconShuffle
+          <Icon
             width="24px"
             height="24px"
             shrink="0"
             overflow="hidden"
             position="relative"
             padding="0px 0px 0px 0px"
-            color="rgba(13.000000175088644,26.000000350177288,38.0000015348196,1)"
             type="shuffle"
             fontSize="24px"
-            {...getOverrideProps(
-              overrides,
-              "Flex.Flex[2].Flex[1].IconShuffle[0]"
-            )}
-          ></IconShuffle>
+            {...getOverrideProps(overrides, "Flex.Flex[2].Flex[1].Icon[0]")}
+          ></Icon>
           <Text
             fontFamily="Inter"
             fontSize="16px"
             fontWeight="400"
-            color="rgba(13.000000175088644,26.000000350177288,38.0000015348196,1)"
+            color="rgba(13,26,38,1)"
             lineHeight="24px"
             textAlign="left"
             display="flex"
             direction="column"
             justifyContent="flex-start"
-            letterSpacing="0.010000000000000009px"
+            letterSpacing="0.01px"
             shrink="0"
             position="relative"
             padding="0px 0px 0px 0px"
+            whiteSpace="pre-wrap"
             children="99"
             {...getOverrideProps(overrides, "Flex.Flex[2].Flex[1].Text[0]")}
           ></Text>
@@ -368,51 +355,47 @@ export default function SocialB(props) {
           padding="0px 0px 0px 0px"
           {...getOverrideProps(overrides, "Flex.Flex[2].Flex[2]")}
         >
-          <IconFavoriteBorder
+          <Icon
             width="24px"
             height="24px"
             shrink="0"
             overflow="hidden"
             position="relative"
             padding="0px 0px 0px 0px"
-            color="rgba(13.000000175088644,26.000000350177288,38.0000015348196,1)"
             type="favorite_border"
             fontSize="24px"
-            {...getOverrideProps(
-              overrides,
-              "Flex.Flex[2].Flex[2].IconFavoriteBorder[0]"
-            )}
-          ></IconFavoriteBorder>
+            {...getOverrideProps(overrides, "Flex.Flex[2].Flex[2].Icon[0]")}
+          ></Icon>
           <Text
             fontFamily="Inter"
             fontSize="16px"
             fontWeight="400"
-            color="rgba(13.000000175088644,26.000000350177288,38.0000015348196,1)"
+            color="rgba(13,26,38,1)"
             lineHeight="24px"
             textAlign="left"
             display="flex"
             direction="column"
             justifyContent="flex-start"
-            letterSpacing="0.010000000000000009px"
+            letterSpacing="0.01px"
             shrink="0"
             position="relative"
             padding="0px 0px 0px 0px"
+            whiteSpace="pre-wrap"
             children="99"
             {...getOverrideProps(overrides, "Flex.Flex[2].Flex[2].Text[0]")}
           ></Text>
         </Flex>
-        <IconShare
+        <Icon
           width="24px"
           height="24px"
           shrink="0"
           overflow="hidden"
           position="relative"
           padding="0px 0px 0px 0px"
-          color="rgba(13.000000175088644,26.000000350177288,38.0000015348196,1)"
           type="share"
           fontSize="24px"
-          {...getOverrideProps(overrides, "Flex.Flex[2].IconShare[0]")}
-        ></IconShare>
+          {...getOverrideProps(overrides, "Flex.Flex[2].Icon[0]")}
+        ></Icon>
       </Flex>
     </Flex>
   );

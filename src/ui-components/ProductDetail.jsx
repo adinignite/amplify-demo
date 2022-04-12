@@ -14,6 +14,7 @@ import {
   Image,
   Rating,
   Text,
+  View,
 } from "@aws-amplify/ui-react";
 export default function ProductDetail(props) {
   const { overrides: overridesProp, ...rest } = props;
@@ -32,19 +33,19 @@ export default function ProductDetail(props) {
       <Flex
         gap="32px"
         direction="column"
-        width="740px"
+        width="616px"
         grow="1"
-        basis="740px"
-        height="1098px"
+        basis="616px"
+        height="1146px"
         position="relative"
         padding="0px 0px 0px 0px"
         {...getOverrideProps(overrides, "Flex.Flex[0]")}
       >
         <Image
-          width="740px"
           height="480px"
           shrink="0"
           alignSelf="stretch"
+          objectFit="cover"
           position="relative"
           padding="0px 0px 0px 0px"
           {...getOverrideProps(overrides, "Flex.Flex[0].Image[0]")}
@@ -54,6 +55,7 @@ export default function ProductDetail(props) {
           direction="column"
           shrink="0"
           alignSelf="stretch"
+          objectFit="cover"
           position="relative"
           padding="0px 0px 0px 0px"
           {...getOverrideProps(overrides, "Flex.Flex[0].Flex[0]")}
@@ -63,6 +65,7 @@ export default function ProductDetail(props) {
             direction="column"
             shrink="0"
             alignSelf="stretch"
+            objectFit="cover"
             position="relative"
             padding="0px 0px 0px 0px"
             {...getOverrideProps(overrides, "Flex.Flex[0].Flex[0].Flex[0]")}
@@ -71,17 +74,18 @@ export default function ProductDetail(props) {
               fontFamily="Inter"
               fontSize="40px"
               fontWeight="700"
-              color="rgba(13.000000175088644,26.000000350177288,38.0000015348196,1)"
+              color="rgba(13,26,38,1)"
               lineHeight="48px"
               textAlign="left"
               display="flex"
               direction="column"
               justifyContent="flex-start"
-              width="740px"
               shrink="0"
               alignSelf="stretch"
+              objectFit="cover"
               position="relative"
               padding="0px 0px 0px 0px"
+              whiteSpace="pre-wrap"
               children="Basic Tee 6-Pack"
               {...getOverrideProps(
                 overrides,
@@ -92,18 +96,19 @@ export default function ProductDetail(props) {
               fontFamily="Inter"
               fontSize="16px"
               fontWeight="400"
-              color="rgba(92.00000211596489,102.00000151991844,112.000000923872,1)"
+              color="rgba(92,102,112,1)"
               lineHeight="24px"
               textAlign="left"
               display="flex"
               direction="column"
               justifyContent="flex-start"
-              letterSpacing="0.010000000000000009px"
-              width="740px"
+              letterSpacing="0.01px"
               shrink="0"
               alignSelf="stretch"
+              objectFit="cover"
               position="relative"
               padding="0px 0px 0px 0px"
+              whiteSpace="pre-wrap"
               children="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in voluptate velit esse cillum dolore eu fugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in voluptate velit esse cillum dolore eu fugiat."
               {...getOverrideProps(
                 overrides,
@@ -112,9 +117,9 @@ export default function ProductDetail(props) {
             ></Text>
           </Flex>
           <Divider
-            width="740px"
             shrink="0"
             alignSelf="stretch"
+            objectFit="cover"
             size="small"
             orientation="horizontal"
             {...getOverrideProps(overrides, "Flex.Flex[0].Flex[0].Divider[0]")}
@@ -124,6 +129,7 @@ export default function ProductDetail(props) {
             direction="column"
             shrink="0"
             alignSelf="stretch"
+            objectFit="cover"
             position="relative"
             padding="0px 0px 0px 0px"
             {...getOverrideProps(overrides, "Flex.Flex[0].Flex[0].Flex[1]")}
@@ -132,17 +138,18 @@ export default function ProductDetail(props) {
               fontFamily="Inter"
               fontSize="16px"
               fontWeight="700"
-              color="rgba(13.000000175088644,26.000000350177288,38.0000015348196,1)"
+              color="rgba(13,26,38,1)"
               lineHeight="24px"
               textAlign="left"
               display="flex"
               direction="column"
               justifyContent="flex-start"
-              width="740px"
               shrink="0"
               alignSelf="stretch"
+              objectFit="cover"
               position="relative"
               padding="0px 0px 0px 0px"
+              whiteSpace="pre-wrap"
               children="Highlights"
               {...getOverrideProps(
                 overrides,
@@ -153,18 +160,19 @@ export default function ProductDetail(props) {
               fontFamily="Inter"
               fontSize="16px"
               fontWeight="400"
-              color="rgba(92.00000211596489,102.00000151991844,112.000000923872,1)"
+              color="rgba(92,102,112,1)"
               lineHeight="24px"
               textAlign="left"
               display="flex"
               direction="column"
               justifyContent="flex-start"
-              letterSpacing="0.010000000000000009px"
-              width="740px"
+              letterSpacing="0.01px"
               shrink="0"
               alignSelf="stretch"
+              objectFit="cover"
               position="relative"
               padding="0px 0px 0px 0px"
+              whiteSpace="pre-wrap"
               children="    Hand cut and sewn locally&#xA;    Dyed with our proprietary colors&#xA;    Pre-washed & pre-shrunk&#xA;    Ultra-soft 100% cotton"
               {...getOverrideProps(
                 overrides,
@@ -173,9 +181,9 @@ export default function ProductDetail(props) {
             ></Text>
           </Flex>
           <Divider
-            width="740px"
             shrink="0"
             alignSelf="stretch"
+            objectFit="cover"
             size="small"
             orientation="horizontal"
             {...getOverrideProps(overrides, "Flex.Flex[0].Flex[0].Divider[1]")}
@@ -185,6 +193,7 @@ export default function ProductDetail(props) {
             direction="column"
             shrink="0"
             alignSelf="stretch"
+            objectFit="cover"
             position="relative"
             padding="0px 0px 0px 0px"
             {...getOverrideProps(overrides, "Flex.Flex[0].Flex[0].Flex[2]")}
@@ -193,17 +202,18 @@ export default function ProductDetail(props) {
               fontFamily="Inter"
               fontSize="16px"
               fontWeight="700"
-              color="rgba(13.000000175088644,26.000000350177288,38.0000015348196,1)"
+              color="rgba(13,26,38,1)"
               lineHeight="24px"
               textAlign="left"
               display="flex"
               direction="column"
               justifyContent="flex-start"
-              width="740px"
               shrink="0"
               alignSelf="stretch"
+              objectFit="cover"
               position="relative"
               padding="0px 0px 0px 0px"
+              whiteSpace="pre-wrap"
               children="Details"
               {...getOverrideProps(
                 overrides,
@@ -214,18 +224,19 @@ export default function ProductDetail(props) {
               fontFamily="Inter"
               fontSize="16px"
               fontWeight="400"
-              color="rgba(92.00000211596489,102.00000151991844,112.000000923872,1)"
+              color="rgba(92,102,112,1)"
               lineHeight="24px"
               textAlign="left"
               display="flex"
               direction="column"
               justifyContent="flex-start"
-              letterSpacing="0.010000000000000009px"
-              width="740px"
+              letterSpacing="0.01px"
               shrink="0"
               alignSelf="stretch"
+              objectFit="cover"
               position="relative"
               padding="0px 0px 0px 0px"
+              whiteSpace="pre-wrap"
               children="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor."
               {...getOverrideProps(
                 overrides,
@@ -243,6 +254,15 @@ export default function ProductDetail(props) {
         orientation="vertical"
         {...getOverrideProps(overrides, "Flex.Divider[0]")}
       ></Divider>
+      <View
+        width="100px"
+        height="100px"
+        shrink="0"
+        overflow="hidden"
+        position="relative"
+        padding="0px 0px 0px 0px"
+        {...getOverrideProps(overrides, "Flex.View[0]")}
+      ></View>
       <Flex
         gap="24px"
         direction="column"
@@ -256,7 +276,7 @@ export default function ProductDetail(props) {
           fontFamily="Inter"
           fontSize="40px"
           fontWeight="700"
-          color="rgba(13.000000175088644,26.000000350177288,38.0000015348196,1)"
+          color="rgba(13,26,38,1)"
           lineHeight="48px"
           textAlign="left"
           display="flex"
@@ -265,6 +285,7 @@ export default function ProductDetail(props) {
           shrink="0"
           position="relative"
           padding="0px 0px 0px 0px"
+          whiteSpace="pre-wrap"
           children="$192"
           {...getOverrideProps(overrides, "Flex.Flex[1].Text[0]")}
         ></Text>
@@ -289,7 +310,7 @@ export default function ProductDetail(props) {
             fontFamily="Inter"
             fontSize="14px"
             fontWeight="400"
-            color="rgba(13.000000175088644,26.000000350177288,38.0000015348196,1)"
+            color="rgba(13,26,38,1)"
             lineHeight="18px"
             textAlign="left"
             display="flex"
@@ -299,6 +320,7 @@ export default function ProductDetail(props) {
             shrink="0"
             position="relative"
             padding="0px 0px 0px 0px"
+            whiteSpace="pre-wrap"
             children="12 reviews"
             {...getOverrideProps(overrides, "Flex.Flex[1].Flex[0].Text[0]")}
           ></Text>
@@ -320,7 +342,6 @@ export default function ProductDetail(props) {
             width="371px"
             size="default"
             variation="primary"
-            children="Primary Button"
             {...getOverrideProps(overrides, "Flex.Flex[1].Flex[1].Button[0]")}
           ></Button>
           <Flex
@@ -334,15 +355,14 @@ export default function ProductDetail(props) {
             {...getOverrideProps(overrides, "Flex.Flex[1].Flex[1].Flex[0]")}
           >
             <Button
-              backgroundColor="rgba(239.00000095367432,240.00000089406967,240.00000089406967,1)"
+              backgroundColor="rgba(239,240,240,1)"
               display="flex"
               width="75px"
               shrink="0"
               height="48px"
               size="large"
-              isDisabled="true"
+              isDisabled={true}
               variation="primary"
-              children="XXS"
               {...getOverrideProps(
                 overrides,
                 "Flex.Flex[1].Flex[1].Flex[0].Button[0]"
@@ -355,7 +375,6 @@ export default function ProductDetail(props) {
               height="48px"
               size="large"
               variation="primary"
-              children="XS"
               {...getOverrideProps(
                 overrides,
                 "Flex.Flex[1].Flex[1].Flex[0].Button[1]"
@@ -368,7 +387,6 @@ export default function ProductDetail(props) {
               height="48px"
               size="large"
               variation="primary"
-              children="S"
               {...getOverrideProps(
                 overrides,
                 "Flex.Flex[1].Flex[1].Flex[0].Button[2]"
@@ -381,7 +399,6 @@ export default function ProductDetail(props) {
               height="48px"
               size="large"
               variation="primary"
-              children="M"
               {...getOverrideProps(
                 overrides,
                 "Flex.Flex[1].Flex[1].Flex[0].Button[3]"
@@ -406,7 +423,6 @@ export default function ProductDetail(props) {
               height="48px"
               size="large"
               variation="primary"
-              children="L"
               {...getOverrideProps(
                 overrides,
                 "Flex.Flex[1].Flex[1].Flex[1].Button[0]"
@@ -420,7 +436,6 @@ export default function ProductDetail(props) {
               height="48px"
               size="large"
               variation="primary"
-              children="XL"
               {...getOverrideProps(
                 overrides,
                 "Flex.Flex[1].Flex[1].Flex[1].Button[1]"
@@ -434,7 +449,6 @@ export default function ProductDetail(props) {
               height="48px"
               size="large"
               variation="primary"
-              children="2XL"
               {...getOverrideProps(
                 overrides,
                 "Flex.Flex[1].Flex[1].Flex[1].Button[2]"
@@ -448,7 +462,6 @@ export default function ProductDetail(props) {
               height="48px"
               size="large"
               variation="primary"
-              children="3XL"
               {...getOverrideProps(
                 overrides,
                 "Flex.Flex[1].Flex[1].Flex[1].Button[3]"
@@ -459,7 +472,7 @@ export default function ProductDetail(props) {
             fontFamily="Inter"
             fontSize="14px"
             fontWeight="400"
-            color="rgba(13.000000175088644,26.000000350177288,38.0000015348196,1)"
+            color="rgba(13,26,38,1)"
             lineHeight="18px"
             textAlign="right"
             display="flex"
@@ -470,6 +483,7 @@ export default function ProductDetail(props) {
             top="3px"
             left="300px"
             padding="0px 0px 0px 0px"
+            whiteSpace="pre-wrap"
             children="Size Guide"
             {...getOverrideProps(overrides, "Flex.Flex[1].Flex[1].Text[0]")}
           ></Text>
@@ -477,17 +491,18 @@ export default function ProductDetail(props) {
             fontFamily="Inter"
             fontSize="16px"
             fontWeight="400"
-            color="rgba(48.000000938773155,64.00000378489494,80.00000283122063,1)"
+            color="rgba(48,64,80,1)"
             lineHeight="24px"
             textAlign="left"
             display="flex"
             direction="column"
             justifyContent="flex-start"
-            letterSpacing="0.010000000000000009px"
+            letterSpacing="0.01px"
             position="absolute"
             top="0px"
             left="0px"
             padding="0px 0px 0px 0px"
+            whiteSpace="pre-wrap"
             children="Size "
             {...getOverrideProps(overrides, "Flex.Flex[1].Flex[1].Text[1]")}
           ></Text>

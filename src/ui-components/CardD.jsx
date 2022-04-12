@@ -46,6 +46,7 @@ export default function CardD(props) {
         bottom="40px"
         left="calc(50% - 59px - 0px)"
         padding="0px 0px 0px 0px"
+        whiteSpace="pre-wrap"
         children="Explore"
         {...getOverrideProps(overrides, "View.Text[0]")}
       ></Text>

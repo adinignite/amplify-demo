@@ -35,6 +35,7 @@ export default function HeroLayout3(props) {
         grow="1"
         basis="228px"
         alignSelf="stretch"
+        objectFit="cover"
         position="relative"
         padding="0px 0px 0px 0px"
         {...getOverrideProps(overrides, "Flex.Flex[0]")}
@@ -50,11 +51,12 @@ export default function HeroLayout3(props) {
           direction="column"
           justifyContent="flex-start"
           letterSpacing="0.49px"
-          width="960px"
           shrink="0"
           alignSelf="stretch"
+          objectFit="cover"
           position="relative"
           padding="0px 0px 0px 0px"
+          whiteSpace="pre-wrap"
           children="LOREM IPSUM"
           {...getOverrideProps(overrides, "Flex.Flex[0].Text[0]")}
         ></Text>
@@ -63,6 +65,7 @@ export default function HeroLayout3(props) {
           direction="column"
           shrink="0"
           alignSelf="stretch"
+          objectFit="cover"
           position="relative"
           padding="0px 0px 0px 0px"
           {...getOverrideProps(overrides, "Flex.Flex[0].Flex[0]")}
@@ -77,11 +80,12 @@ export default function HeroLayout3(props) {
             display="flex"
             direction="column"
             justifyContent="flex-start"
-            width="960px"
             shrink="0"
             alignSelf="stretch"
+            objectFit="cover"
             position="relative"
             padding="0px 0px 0px 0px"
+            whiteSpace="pre-wrap"
             children="Ut enim ad minim veniam quis nostrud"
             {...getOverrideProps(overrides, "Flex.Flex[0].Flex[0].Text[0]")}
           ></Text>
@@ -95,12 +99,13 @@ export default function HeroLayout3(props) {
             display="flex"
             direction="column"
             justifyContent="flex-start"
-            letterSpacing="0.010000000000000009px"
-            width="960px"
+            letterSpacing="0.01px"
             shrink="0"
             alignSelf="stretch"
+            objectFit="cover"
             position="relative"
             padding="0px 0px 0px 0px"
+            whiteSpace="pre-wrap"
             children="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
             {...getOverrideProps(overrides, "Flex.Flex[0].Flex[0].Text[1]")}
           ></Text>
@@ -111,7 +116,6 @@ export default function HeroLayout3(props) {
           width="206px"
           size="large"
           variation="primary"
-          children="Primary Button"
           {...getOverrideProps(overrides, "Flex.Flex[0].Button[0]")}
         ></Button>
       </Flex>

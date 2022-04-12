@@ -7,7 +7,7 @@
 /* eslint-disable */
 import React from "react";
 import { getOverrideProps } from "@aws-amplify/ui-react/internal";
-import { Flex, IconAddBox, Text } from "@aws-amplify/ui-react";
+import { Flex, Icon, Text } from "@aws-amplify/ui-react";
 export default function Features2x3(props) {
   const { overrides: overridesProp, ...rest } = props;
   const overrides = { ...overridesProp };
@@ -20,7 +20,7 @@ export default function Features2x3(props) {
       alignItems="center"
       position="relative"
       padding="40px 140px 40px 140px"
-      backgroundColor="rgba(92.00000211596489,102.00000151991844,112.000000923872,1)"
+      backgroundColor="rgba(92,102,112,1)"
       {...rest}
       {...getOverrideProps(overrides, "Flex")}
     >
@@ -31,6 +31,7 @@ export default function Features2x3(props) {
         alignItems="center"
         shrink="0"
         alignSelf="stretch"
+        objectFit="cover"
         position="relative"
         padding="0px 0px 0px 0px"
         {...getOverrideProps(overrides, "Flex.Flex[0]")}
@@ -51,6 +52,7 @@ export default function Features2x3(props) {
             direction="column"
             shrink="0"
             alignSelf="stretch"
+            objectFit="cover"
             position="relative"
             padding="24px 24px 24px 24px"
             backgroundColor="rgba(0,0,0,1)"
@@ -62,6 +64,7 @@ export default function Features2x3(props) {
               alignItems="flex-start"
               shrink="0"
               alignSelf="stretch"
+              objectFit="cover"
               position="relative"
               padding="0px 0px 0px 0px"
               {...getOverrideProps(
@@ -69,7 +72,7 @@ export default function Features2x3(props) {
                 "Flex.Flex[0].Flex[0].Flex[0].Flex[0]"
               )}
             >
-              <IconAddBox
+              <Icon
                 width="40px"
                 height="40px"
                 shrink="0"
@@ -77,14 +80,13 @@ export default function Features2x3(props) {
                 position="relative"
                 padding="0px 0px 0px 0px"
                 backgroundColor="rgba(0,0,0,1)"
-                color="rgba(255,255,255,1)"
                 type="add_box"
                 fontSize="40px"
                 {...getOverrideProps(
                   overrides,
-                  "Flex.Flex[0].Flex[0].Flex[0].Flex[0].IconAddBox[0]"
+                  "Flex.Flex[0].Flex[0].Flex[0].Flex[0].Icon[0]"
                 )}
-              ></IconAddBox>
+              ></Icon>
               <Flex
                 gap="8px"
                 direction="column"
@@ -110,11 +112,12 @@ export default function Features2x3(props) {
                   display="flex"
                   direction="column"
                   justifyContent="flex-start"
-                  width="456px"
                   shrink="0"
                   alignSelf="stretch"
+                  objectFit="cover"
                   position="relative"
                   padding="0px 0px 0px 0px"
+                  whiteSpace="pre-wrap"
                   children="Feature A"
                   {...getOverrideProps(
                     overrides,
@@ -131,12 +134,13 @@ export default function Features2x3(props) {
                   display="flex"
                   direction="column"
                   justifyContent="flex-start"
-                  letterSpacing="0.010000000000000009px"
-                  width="456px"
+                  letterSpacing="0.01px"
                   shrink="0"
                   alignSelf="stretch"
+                  objectFit="cover"
                   position="relative"
                   padding="0px 0px 0px 0px"
+                  whiteSpace="pre-wrap"
                   children="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
                   {...getOverrideProps(
                     overrides,
@@ -151,6 +155,7 @@ export default function Features2x3(props) {
             direction="column"
             shrink="0"
             alignSelf="stretch"
+            objectFit="cover"
             position="relative"
             padding="24px 24px 24px 24px"
             backgroundColor="rgba(0,0,0,1)"
@@ -162,6 +167,7 @@ export default function Features2x3(props) {
               alignItems="flex-start"
               shrink="0"
               alignSelf="stretch"
+              objectFit="cover"
               position="relative"
               padding="0px 0px 0px 0px"
               {...getOverrideProps(
@@ -169,7 +175,7 @@ export default function Features2x3(props) {
                 "Flex.Flex[0].Flex[0].Flex[1].Flex[0]"
               )}
             >
-              <IconAddBox
+              <Icon
                 width="40px"
                 height="40px"
                 shrink="0"
@@ -177,14 +183,13 @@ export default function Features2x3(props) {
                 position="relative"
                 padding="0px 0px 0px 0px"
                 backgroundColor="rgba(0,0,0,1)"
-                color="rgba(255,255,255,1)"
                 type="add_box"
                 fontSize="40px"
                 {...getOverrideProps(
                   overrides,
-                  "Flex.Flex[0].Flex[0].Flex[1].Flex[0].IconAddBox[0]"
+                  "Flex.Flex[0].Flex[0].Flex[1].Flex[0].Icon[0]"
                 )}
-              ></IconAddBox>
+              ></Icon>
               <Flex
                 gap="8px"
                 direction="column"
@@ -210,11 +215,12 @@ export default function Features2x3(props) {
                   display="flex"
                   direction="column"
                   justifyContent="flex-start"
-                  width="456px"
                   shrink="0"
                   alignSelf="stretch"
+                  objectFit="cover"
                   position="relative"
                   padding="0px 0px 0px 0px"
+                  whiteSpace="pre-wrap"
                   children="Feature C"
                   {...getOverrideProps(
                     overrides,
@@ -231,12 +237,13 @@ export default function Features2x3(props) {
                   display="flex"
                   direction="column"
                   justifyContent="flex-start"
-                  letterSpacing="0.010000000000000009px"
-                  width="456px"
+                  letterSpacing="0.01px"
                   shrink="0"
                   alignSelf="stretch"
+                  objectFit="cover"
                   position="relative"
                   padding="0px 0px 0px 0px"
+                  whiteSpace="pre-wrap"
                   children="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
                   {...getOverrideProps(
                     overrides,
@@ -251,6 +258,7 @@ export default function Features2x3(props) {
             direction="column"
             shrink="0"
             alignSelf="stretch"
+            objectFit="cover"
             position="relative"
             padding="24px 24px 24px 24px"
             backgroundColor="rgba(0,0,0,1)"
@@ -262,6 +270,7 @@ export default function Features2x3(props) {
               alignItems="flex-start"
               shrink="0"
               alignSelf="stretch"
+              objectFit="cover"
               position="relative"
               padding="0px 0px 0px 0px"
               {...getOverrideProps(
@@ -269,7 +278,7 @@ export default function Features2x3(props) {
                 "Flex.Flex[0].Flex[0].Flex[2].Flex[0]"
               )}
             >
-              <IconAddBox
+              <Icon
                 width="40px"
                 height="40px"
                 shrink="0"
@@ -277,14 +286,13 @@ export default function Features2x3(props) {
                 position="relative"
                 padding="0px 0px 0px 0px"
                 backgroundColor="rgba(0,0,0,1)"
-                color="rgba(255,255,255,1)"
                 type="add_box"
                 fontSize="40px"
                 {...getOverrideProps(
                   overrides,
-                  "Flex.Flex[0].Flex[0].Flex[2].Flex[0].IconAddBox[0]"
+                  "Flex.Flex[0].Flex[0].Flex[2].Flex[0].Icon[0]"
                 )}
-              ></IconAddBox>
+              ></Icon>
               <Flex
                 gap="8px"
                 direction="column"
@@ -310,11 +318,12 @@ export default function Features2x3(props) {
                   display="flex"
                   direction="column"
                   justifyContent="flex-start"
-                  width="456px"
                   shrink="0"
                   alignSelf="stretch"
+                  objectFit="cover"
                   position="relative"
                   padding="0px 0px 0px 0px"
+                  whiteSpace="pre-wrap"
                   children="Feature E"
                   {...getOverrideProps(
                     overrides,
@@ -331,12 +340,13 @@ export default function Features2x3(props) {
                   display="flex"
                   direction="column"
                   justifyContent="flex-start"
-                  letterSpacing="0.010000000000000009px"
-                  width="456px"
+                  letterSpacing="0.01px"
                   shrink="0"
                   alignSelf="stretch"
+                  objectFit="cover"
                   position="relative"
                   padding="0px 0px 0px 0px"
+                  whiteSpace="pre-wrap"
                   children="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
                   {...getOverrideProps(
                     overrides,
@@ -363,6 +373,7 @@ export default function Features2x3(props) {
             direction="column"
             shrink="0"
             alignSelf="stretch"
+            objectFit="cover"
             position="relative"
             padding="24px 24px 24px 24px"
             backgroundColor="rgba(0,0,0,1)"
@@ -374,6 +385,7 @@ export default function Features2x3(props) {
               alignItems="flex-start"
               shrink="0"
               alignSelf="stretch"
+              objectFit="cover"
               position="relative"
               padding="0px 0px 0px 0px"
               {...getOverrideProps(
@@ -381,7 +393,7 @@ export default function Features2x3(props) {
                 "Flex.Flex[0].Flex[1].Flex[0].Flex[0]"
               )}
             >
-              <IconAddBox
+              <Icon
                 width="40px"
                 height="40px"
                 shrink="0"
@@ -389,14 +401,13 @@ export default function Features2x3(props) {
                 position="relative"
                 padding="0px 0px 0px 0px"
                 backgroundColor="rgba(0,0,0,1)"
-                color="rgba(255,255,255,1)"
                 type="add_box"
                 fontSize="40px"
                 {...getOverrideProps(
                   overrides,
-                  "Flex.Flex[0].Flex[1].Flex[0].Flex[0].IconAddBox[0]"
+                  "Flex.Flex[0].Flex[1].Flex[0].Flex[0].Icon[0]"
                 )}
-              ></IconAddBox>
+              ></Icon>
               <Flex
                 gap="8px"
                 direction="column"
@@ -422,11 +433,12 @@ export default function Features2x3(props) {
                   display="flex"
                   direction="column"
                   justifyContent="flex-start"
-                  width="456px"
                   shrink="0"
                   alignSelf="stretch"
+                  objectFit="cover"
                   position="relative"
                   padding="0px 0px 0px 0px"
+                  whiteSpace="pre-wrap"
                   children="Feature B"
                   {...getOverrideProps(
                     overrides,
@@ -443,12 +455,13 @@ export default function Features2x3(props) {
                   display="flex"
                   direction="column"
                   justifyContent="flex-start"
-                  letterSpacing="0.010000000000000009px"
-                  width="456px"
+                  letterSpacing="0.01px"
                   shrink="0"
                   alignSelf="stretch"
+                  objectFit="cover"
                   position="relative"
                   padding="0px 0px 0px 0px"
+                  whiteSpace="pre-wrap"
                   children="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
                   {...getOverrideProps(
                     overrides,
@@ -463,6 +476,7 @@ export default function Features2x3(props) {
             direction="column"
             shrink="0"
             alignSelf="stretch"
+            objectFit="cover"
             position="relative"
             padding="24px 24px 24px 24px"
             backgroundColor="rgba(0,0,0,1)"
@@ -474,6 +488,7 @@ export default function Features2x3(props) {
               alignItems="flex-start"
               shrink="0"
               alignSelf="stretch"
+              objectFit="cover"
               position="relative"
               padding="0px 0px 0px 0px"
               {...getOverrideProps(
@@ -481,7 +496,7 @@ export default function Features2x3(props) {
                 "Flex.Flex[0].Flex[1].Flex[1].Flex[0]"
               )}
             >
-              <IconAddBox
+              <Icon
                 width="40px"
                 height="40px"
                 shrink="0"
@@ -489,14 +504,13 @@ export default function Features2x3(props) {
                 position="relative"
                 padding="0px 0px 0px 0px"
                 backgroundColor="rgba(0,0,0,1)"
-                color="rgba(255,255,255,1)"
                 type="add_box"
                 fontSize="40px"
                 {...getOverrideProps(
                   overrides,
-                  "Flex.Flex[0].Flex[1].Flex[1].Flex[0].IconAddBox[0]"
+                  "Flex.Flex[0].Flex[1].Flex[1].Flex[0].Icon[0]"
                 )}
-              ></IconAddBox>
+              ></Icon>
               <Flex
                 gap="8px"
                 direction="column"
@@ -522,11 +536,12 @@ export default function Features2x3(props) {
                   display="flex"
                   direction="column"
                   justifyContent="flex-start"
-                  width="456px"
                   shrink="0"
                   alignSelf="stretch"
+                  objectFit="cover"
                   position="relative"
                   padding="0px 0px 0px 0px"
+                  whiteSpace="pre-wrap"
                   children="Feature D"
                   {...getOverrideProps(
                     overrides,
@@ -543,12 +558,13 @@ export default function Features2x3(props) {
                   display="flex"
                   direction="column"
                   justifyContent="flex-start"
-                  letterSpacing="0.010000000000000009px"
-                  width="456px"
+                  letterSpacing="0.01px"
                   shrink="0"
                   alignSelf="stretch"
+                  objectFit="cover"
                   position="relative"
                   padding="0px 0px 0px 0px"
+                  whiteSpace="pre-wrap"
                   children="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
                   {...getOverrideProps(
                     overrides,
@@ -563,6 +579,7 @@ export default function Features2x3(props) {
             direction="column"
             shrink="0"
             alignSelf="stretch"
+            objectFit="cover"
             position="relative"
             padding="24px 24px 24px 24px"
             backgroundColor="rgba(0,0,0,1)"
@@ -574,6 +591,7 @@ export default function Features2x3(props) {
               alignItems="flex-start"
               shrink="0"
               alignSelf="stretch"
+              objectFit="cover"
               position="relative"
               padding="0px 0px 0px 0px"
               {...getOverrideProps(
@@ -581,7 +599,7 @@ export default function Features2x3(props) {
                 "Flex.Flex[0].Flex[1].Flex[2].Flex[0]"
               )}
             >
-              <IconAddBox
+              <Icon
                 width="40px"
                 height="40px"
                 shrink="0"
@@ -589,14 +607,13 @@ export default function Features2x3(props) {
                 position="relative"
                 padding="0px 0px 0px 0px"
                 backgroundColor="rgba(0,0,0,1)"
-                color="rgba(255,255,255,1)"
                 type="add_box"
                 fontSize="40px"
                 {...getOverrideProps(
                   overrides,
-                  "Flex.Flex[0].Flex[1].Flex[2].Flex[0].IconAddBox[0]"
+                  "Flex.Flex[0].Flex[1].Flex[2].Flex[0].Icon[0]"
                 )}
-              ></IconAddBox>
+              ></Icon>
               <Flex
                 gap="8px"
                 direction="column"
@@ -622,11 +639,12 @@ export default function Features2x3(props) {
                   display="flex"
                   direction="column"
                   justifyContent="flex-start"
-                  width="456px"
                   shrink="0"
                   alignSelf="stretch"
+                  objectFit="cover"
                   position="relative"
                   padding="0px 0px 0px 0px"
+                  whiteSpace="pre-wrap"
                   children="Feature F"
                   {...getOverrideProps(
                     overrides,
@@ -643,12 +661,13 @@ export default function Features2x3(props) {
                   display="flex"
                   direction="column"
                   justifyContent="flex-start"
-                  letterSpacing="0.010000000000000009px"
-                  width="456px"
+                  letterSpacing="0.01px"
                   shrink="0"
                   alignSelf="stretch"
+                  objectFit="cover"
                   position="relative"
                   padding="0px 0px 0px 0px"
+                  whiteSpace="pre-wrap"
                   children="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
                   {...getOverrideProps(
                     overrides,

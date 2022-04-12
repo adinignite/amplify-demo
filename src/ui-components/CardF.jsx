@@ -11,8 +11,7 @@ import {
   Badge,
   Divider,
   Flex,
-  IconChat,
-  IconCheck,
+  Icon,
   Image,
   Rating,
   Text,
@@ -56,17 +55,18 @@ export default function CardF(props) {
           fontFamily="Inter"
           fontSize="32px"
           fontWeight="700"
-          color="rgba(13.000000175088644,26.000000350177288,38.0000015348196,1)"
+          color="rgba(13,26,38,1)"
           lineHeight="40px"
           textAlign="left"
           display="flex"
           direction="column"
           justifyContent="flex-start"
-          width="576px"
           shrink="0"
           alignSelf="stretch"
+          objectFit="cover"
           position="relative"
           padding="0px 0px 0px 0px"
+          whiteSpace="pre-wrap"
           children="Classic Long Sleeve T-Shirt"
           {...getOverrideProps(overrides, "Flex.Flex[0].Text[0]")}
         ></Text>
@@ -91,7 +91,7 @@ export default function CardF(props) {
             fontFamily="Inter"
             fontSize="16px"
             fontWeight="400"
-            color="rgba(13.000000175088644,26.000000350177288,38.0000015348196,1)"
+            color="rgba(13,26,38,1)"
             lineHeight="22px"
             textAlign="left"
             display="flex"
@@ -102,6 +102,7 @@ export default function CardF(props) {
             shrink="0"
             position="relative"
             padding="0px 0px 0px 0px"
+            whiteSpace="pre-wrap"
             children="72"
             {...getOverrideProps(overrides, "Flex.Flex[0].Flex[0].Text[0]")}
           ></Text>
@@ -121,18 +122,8 @@ export default function CardF(props) {
             display="flex"
             shrink="0"
             height="28px"
-            fontFamily="Inter"
-            fontWeight="700"
-            fontSize="16px"
-            color="rgba(13.000000175088644,26.000000350177288,38.0000015348196,1)"
-            textAlign="left"
-            lineHeight="20px"
-            direction="column"
-            justifyContent="flex-start"
-            letterSpacing="0.49px"
             size="small"
             variation="default"
-            children="New"
             {...getOverrideProps(overrides, "Flex.Flex[0].Flex[1].Badge[0]")}
           ></Badge>
           <Badge
@@ -140,18 +131,8 @@ export default function CardF(props) {
             display="flex"
             shrink="0"
             height="28px"
-            fontFamily="Inter"
-            fontWeight="700"
-            fontSize="16px"
-            color="rgba(13.000000175088644,26.000000350177288,38.0000015348196,1)"
-            textAlign="left"
-            lineHeight="20px"
-            direction="column"
-            justifyContent="flex-start"
-            letterSpacing="0.49px"
             size="small"
             variation="default"
-            children="Classic"
             {...getOverrideProps(overrides, "Flex.Flex[0].Flex[1].Badge[1]")}
           ></Badge>
           <Badge
@@ -159,18 +140,8 @@ export default function CardF(props) {
             display="flex"
             shrink="0"
             height="28px"
-            fontFamily="Inter"
-            fontWeight="700"
-            fontSize="16px"
-            color="rgba(13.000000175088644,26.000000350177288,38.0000015348196,1)"
-            textAlign="left"
-            lineHeight="20px"
-            direction="column"
-            justifyContent="flex-start"
-            letterSpacing="0.49px"
             size="small"
             variation="default"
-            children="Modern"
             {...getOverrideProps(overrides, "Flex.Flex[0].Flex[1].Badge[2]")}
           ></Badge>
         </Flex>
@@ -178,18 +149,19 @@ export default function CardF(props) {
           fontFamily="Inter"
           fontSize="16px"
           fontWeight="400"
-          color="rgba(13.000000175088644,26.000000350177288,38.0000015348196,1)"
+          color="rgba(13,26,38,1)"
           lineHeight="24px"
           textAlign="left"
           display="flex"
           direction="column"
           justifyContent="flex-start"
-          letterSpacing="0.010000000000000009px"
-          width="576px"
+          letterSpacing="0.01px"
           shrink="0"
           alignSelf="stretch"
+          objectFit="cover"
           position="relative"
           padding="0px 0px 0px 0px"
+          whiteSpace="pre-wrap"
           children="Information about this product."
           {...getOverrideProps(overrides, "Flex.Flex[0].Text[1]")}
         ></Text>
@@ -199,46 +171,47 @@ export default function CardF(props) {
           alignItems="flex-start"
           shrink="0"
           alignSelf="stretch"
+          objectFit="cover"
           position="relative"
           padding="0px 0px 0px 0px"
           {...getOverrideProps(overrides, "Flex.Flex[0].Flex[2]")}
         >
-          <IconChat
+          <Icon
             width="24px"
             height="24px"
             shrink="0"
             overflow="hidden"
             position="relative"
             padding="0px 0px 0px 0px"
-            color="rgba(13.000000175088644,26.000000350177288,38.0000015348196,1)"
             type="chat"
             fontSize="24px"
-            {...getOverrideProps(overrides, "Flex.Flex[0].Flex[2].IconChat[0]")}
-          ></IconChat>
+            {...getOverrideProps(overrides, "Flex.Flex[0].Flex[2].Icon[0]")}
+          ></Icon>
           <Text
             fontFamily="Inter"
             fontSize="16px"
             fontWeight="400"
-            color="rgba(48.000000938773155,64.00000378489494,80.00000283122063,1)"
+            color="rgba(48,64,80,1)"
             lineHeight="24px"
             textAlign="left"
             display="flex"
             direction="column"
             justifyContent="flex-start"
-            letterSpacing="0.010000000000000009px"
+            letterSpacing="0.01px"
             width="536px"
             grow="1"
             basis="536px"
             position="relative"
             padding="0px 0px 0px 0px"
+            whiteSpace="pre-wrap"
             children="“This is a quote.“"
             {...getOverrideProps(overrides, "Flex.Flex[0].Flex[2].Text[0]")}
           ></Text>
         </Flex>
         <Divider
-          width="576px"
           shrink="0"
           alignSelf="stretch"
+          objectFit="cover"
           size="small"
           orientation="horizontal"
           {...getOverrideProps(overrides, "Flex.Flex[0].Divider[0]")}
@@ -263,35 +236,35 @@ export default function CardF(props) {
             padding="0px 0px 0px 0px"
             {...getOverrideProps(overrides, "Flex.Flex[0].Flex[3].Flex[0]")}
           >
-            <IconCheck
+            <Icon
               width="24px"
               height="24px"
               shrink="0"
               overflow="hidden"
               position="relative"
               padding="0px 0px 0px 0px"
-              color="rgba(67.00000360608101,168.0000051856041,84.00000259280205,1)"
               type="check"
               fontSize="24px"
               {...getOverrideProps(
                 overrides,
-                "Flex.Flex[0].Flex[3].Flex[0].IconCheck[0]"
+                "Flex.Flex[0].Flex[3].Flex[0].Icon[0]"
               )}
-            ></IconCheck>
+            ></Icon>
             <Text
               fontFamily="Inter"
               fontSize="16px"
               fontWeight="400"
-              color="rgba(48.000000938773155,64.00000378489494,80.00000283122063,1)"
+              color="rgba(48,64,80,1)"
               lineHeight="24px"
               textAlign="left"
               display="flex"
               direction="column"
               justifyContent="flex-start"
-              letterSpacing="0.010000000000000009px"
+              letterSpacing="0.01px"
               shrink="0"
               position="relative"
               padding="0px 0px 0px 0px"
+              whiteSpace="pre-wrap"
               children="Fast"
               {...getOverrideProps(
                 overrides,
@@ -309,35 +282,35 @@ export default function CardF(props) {
             padding="0px 0px 0px 0px"
             {...getOverrideProps(overrides, "Flex.Flex[0].Flex[3].Flex[1]")}
           >
-            <IconCheck
+            <Icon
               width="24px"
               height="24px"
               shrink="0"
               overflow="hidden"
               position="relative"
               padding="0px 0px 0px 0px"
-              color="rgba(67.00000360608101,168.0000051856041,84.00000259280205,1)"
               type="check"
               fontSize="24px"
               {...getOverrideProps(
                 overrides,
-                "Flex.Flex[0].Flex[3].Flex[1].IconCheck[0]"
+                "Flex.Flex[0].Flex[3].Flex[1].Icon[0]"
               )}
-            ></IconCheck>
+            ></Icon>
             <Text
               fontFamily="Inter"
               fontSize="16px"
               fontWeight="400"
-              color="rgba(48.000000938773155,64.00000378489494,80.00000283122063,1)"
+              color="rgba(48,64,80,1)"
               lineHeight="24px"
               textAlign="left"
               display="flex"
               direction="column"
               justifyContent="flex-start"
-              letterSpacing="0.010000000000000009px"
+              letterSpacing="0.01px"
               shrink="0"
               position="relative"
               padding="0px 0px 0px 0px"
+              whiteSpace="pre-wrap"
               children="Fun"
               {...getOverrideProps(
                 overrides,
@@ -355,35 +328,35 @@ export default function CardF(props) {
             padding="0px 0px 0px 0px"
             {...getOverrideProps(overrides, "Flex.Flex[0].Flex[3].Flex[2]")}
           >
-            <IconCheck
+            <Icon
               width="24px"
               height="24px"
               shrink="0"
               overflow="hidden"
               position="relative"
               padding="0px 0px 0px 0px"
-              color="rgba(67.00000360608101,168.0000051856041,84.00000259280205,1)"
               type="check"
               fontSize="24px"
               {...getOverrideProps(
                 overrides,
-                "Flex.Flex[0].Flex[3].Flex[2].IconCheck[0]"
+                "Flex.Flex[0].Flex[3].Flex[2].Icon[0]"
               )}
-            ></IconCheck>
+            ></Icon>
             <Text
               fontFamily="Inter"
               fontSize="16px"
               fontWeight="400"
-              color="rgba(48.000000938773155,64.00000378489494,80.00000283122063,1)"
+              color="rgba(48,64,80,1)"
               lineHeight="24px"
               textAlign="left"
               display="flex"
               direction="column"
               justifyContent="flex-start"
-              letterSpacing="0.010000000000000009px"
+              letterSpacing="0.01px"
               shrink="0"
               position="relative"
               padding="0px 0px 0px 0px"
+              whiteSpace="pre-wrap"
               children="Flirty"
               {...getOverrideProps(
                 overrides,

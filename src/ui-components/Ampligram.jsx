@@ -7,17 +7,7 @@
 /* eslint-disable */
 import React from "react";
 import { getOverrideProps } from "@aws-amplify/ui-react/internal";
-import {
-  Divider,
-  Flex,
-  IconBookmarkBorder,
-  IconChatBubbleOutline,
-  IconFavoriteBorder,
-  IconMoreVert,
-  IconSend,
-  Image,
-  Text,
-} from "@aws-amplify/ui-react";
+import { Divider, Flex, Icon, Image, Text } from "@aws-amplify/ui-react";
 export default function Ampligram(props) {
   const { overrides: overridesProp, ...rest } = props;
   const overrides = { ...overridesProp };
@@ -33,9 +23,9 @@ export default function Ampligram(props) {
       {...getOverrideProps(overrides, "Flex")}
     >
       <Divider
-        width="640px"
         shrink="0"
         alignSelf="stretch"
+        objectFit="cover"
         size="small"
         orientation="horizontal"
         {...getOverrideProps(overrides, "Flex.Divider[0]")}
@@ -47,6 +37,7 @@ export default function Ampligram(props) {
         alignItems="center"
         shrink="0"
         alignSelf="stretch"
+        objectFit="cover"
         position="relative"
         padding="16px 16px 16px 16px"
         {...getOverrideProps(overrides, "Flex.Flex[0]")}
@@ -76,16 +67,17 @@ export default function Ampligram(props) {
             fontFamily="Inter"
             fontSize="16px"
             fontWeight="400"
-            color="rgba(13.000000175088644,26.000000350177288,38.0000015348196,1)"
+            color="rgba(13,26,38,1)"
             lineHeight="24px"
             textAlign="left"
             display="flex"
             direction="column"
             justifyContent="flex-start"
-            letterSpacing="0.010000000000000009px"
+            letterSpacing="0.01px"
             shrink="0"
             position="relative"
             padding="0px 0px 0px 0px"
+            whiteSpace="pre-wrap"
             children="Rene Brandel"
             {...getOverrideProps(overrides, "Flex.Flex[0].Flex[0].Text[0]")}
           ></Text>
@@ -101,28 +93,24 @@ export default function Ampligram(props) {
           padding="0px 0px 0px 0px"
           {...getOverrideProps(overrides, "Flex.Flex[0].Flex[1]")}
         >
-          <IconMoreVert
+          <Icon
             width="24px"
             height="24px"
             shrink="0"
             overflow="hidden"
             position="relative"
             padding="0px 0px 0px 0px"
-            color="rgba(13.000000175088644,26.000000350177288,38.0000015348196,1)"
             type="more_vert"
             fontSize="24px"
-            {...getOverrideProps(
-              overrides,
-              "Flex.Flex[0].Flex[1].IconMoreVert[0]"
-            )}
-          ></IconMoreVert>
+            {...getOverrideProps(overrides, "Flex.Flex[0].Flex[1].Icon[0]")}
+          ></Icon>
         </Flex>
       </Flex>
       <Image
-        width="640px"
         height="408px"
         shrink="0"
         alignSelf="stretch"
+        objectFit="cover"
         position="relative"
         padding="0px 0px 0px 0px"
         {...getOverrideProps(overrides, "Flex.Image[0]")}
@@ -133,6 +121,7 @@ export default function Ampligram(props) {
         alignItems="flex-start"
         shrink="0"
         alignSelf="stretch"
+        objectFit="cover"
         position="relative"
         padding="16px 16px 16px 16px"
         {...getOverrideProps(overrides, "Flex.Flex[1]")}
@@ -147,48 +136,39 @@ export default function Ampligram(props) {
           padding="0px 0px 0px 0px"
           {...getOverrideProps(overrides, "Flex.Flex[1].Flex[0]")}
         >
-          <IconFavoriteBorder
+          <Icon
             width="24px"
             height="24px"
             shrink="0"
             overflow="hidden"
             position="relative"
             padding="0px 0px 0px 0px"
-            color="rgba(13.000000175088644,26.000000350177288,38.0000015348196,1)"
             type="favorite_border"
             fontSize="24px"
-            {...getOverrideProps(
-              overrides,
-              "Flex.Flex[1].Flex[0].IconFavoriteBorder[0]"
-            )}
-          ></IconFavoriteBorder>
-          <IconChatBubbleOutline
+            {...getOverrideProps(overrides, "Flex.Flex[1].Flex[0].Icon[0]")}
+          ></Icon>
+          <Icon
             width="24px"
             height="24px"
             shrink="0"
             overflow="hidden"
             position="relative"
             padding="0px 0px 0px 0px"
-            color="rgba(13.000000175088644,26.000000350177288,38.0000015348196,1)"
             type="chat_bubble_outline"
             fontSize="24px"
-            {...getOverrideProps(
-              overrides,
-              "Flex.Flex[1].Flex[0].IconChatBubbleOutline[0]"
-            )}
-          ></IconChatBubbleOutline>
-          <IconSend
+            {...getOverrideProps(overrides, "Flex.Flex[1].Flex[0].Icon[1]")}
+          ></Icon>
+          <Icon
             width="24px"
             height="24px"
             shrink="0"
             overflow="hidden"
             position="relative"
             padding="0px 0px 0px 0px"
-            color="rgba(13.000000175088644,26.000000350177288,38.0000015348196,1)"
             type="send"
             fontSize="24px"
-            {...getOverrideProps(overrides, "Flex.Flex[1].Flex[0].IconSend[0]")}
-          ></IconSend>
+            {...getOverrideProps(overrides, "Flex.Flex[1].Flex[0].Icon[2]")}
+          ></Icon>
         </Flex>
         <Flex
           gap="10px"
@@ -203,21 +183,17 @@ export default function Ampligram(props) {
           padding="0px 0px 0px 0px"
           {...getOverrideProps(overrides, "Flex.Flex[1].Flex[1]")}
         >
-          <IconBookmarkBorder
+          <Icon
             width="24px"
             height="24px"
             shrink="0"
             overflow="hidden"
             position="relative"
             padding="0px 0px 0px 0px"
-            color="rgba(13.000000175088644,26.000000350177288,38.0000015348196,1)"
             type="bookmark_border"
             fontSize="24px"
-            {...getOverrideProps(
-              overrides,
-              "Flex.Flex[1].Flex[1].IconBookmarkBorder[0]"
-            )}
-          ></IconBookmarkBorder>
+            {...getOverrideProps(overrides, "Flex.Flex[1].Flex[1].Icon[0]")}
+          ></Icon>
         </Flex>
       </Flex>
       <Flex
@@ -225,14 +201,15 @@ export default function Ampligram(props) {
         direction="column"
         shrink="0"
         alignSelf="stretch"
+        objectFit="cover"
         position="relative"
         padding="0px 0px 0px 0px"
         {...getOverrideProps(overrides, "Flex.Flex[2]")}
       >
         <Divider
-          width="640px"
           shrink="0"
           alignSelf="stretch"
+          objectFit="cover"
           size="small"
           orientation="horizontal"
           {...getOverrideProps(overrides, "Flex.Flex[2].Divider[0]")}
@@ -242,6 +219,7 @@ export default function Ampligram(props) {
           direction="column"
           shrink="0"
           alignSelf="stretch"
+          objectFit="cover"
           position="relative"
           padding="16px 16px 16px 16px"
           {...getOverrideProps(overrides, "Flex.Flex[2].Flex[0]")}
@@ -250,17 +228,18 @@ export default function Ampligram(props) {
             fontFamily="Inter"
             fontSize="16px"
             fontWeight="700"
-            color="rgba(13.000000175088644,26.000000350177288,38.0000015348196,1)"
+            color="rgba(13,26,38,1)"
             lineHeight="24px"
             textAlign="left"
             display="flex"
             direction="column"
             justifyContent="flex-start"
-            width="608px"
             shrink="0"
             alignSelf="stretch"
+            objectFit="cover"
             position="relative"
             padding="0px 0px 0px 0px"
+            whiteSpace="pre-wrap"
             children="Firstname Lastname"
             {...getOverrideProps(overrides, "Flex.Flex[2].Flex[0].Text[0]")}
           ></Text>
@@ -268,18 +247,19 @@ export default function Ampligram(props) {
             fontFamily="Inter"
             fontSize="16px"
             fontWeight="400"
-            color="rgba(13.000000175088644,26.000000350177288,38.0000015348196,1)"
+            color="rgba(13,26,38,1)"
             lineHeight="24px"
             textAlign="left"
             display="flex"
             direction="column"
             justifyContent="flex-start"
-            letterSpacing="0.010000000000000009px"
-            width="608px"
+            letterSpacing="0.01px"
             shrink="0"
             alignSelf="stretch"
+            objectFit="cover"
             position="relative"
             padding="0px 0px 0px 0px"
+            whiteSpace="pre-wrap"
             children="“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.”"
             {...getOverrideProps(overrides, "Flex.Flex[2].Flex[0].Text[1]")}
           ></Text>
@@ -287,17 +267,18 @@ export default function Ampligram(props) {
             fontFamily="Inter"
             fontSize="14px"
             fontWeight="400"
-            color="rgba(92.00000211596489,102.00000151991844,112.000000923872,1)"
+            color="rgba(92,102,112,1)"
             lineHeight="24px"
             textAlign="left"
             display="flex"
             direction="column"
             justifyContent="flex-start"
-            width="608px"
             shrink="0"
             alignSelf="stretch"
+            objectFit="cover"
             position="relative"
             padding="0px 0px 0px 0px"
+            whiteSpace="pre-wrap"
             children="Timestamp"
             {...getOverrideProps(overrides, "Flex.Flex[2].Flex[0].Text[2]")}
           ></Text>

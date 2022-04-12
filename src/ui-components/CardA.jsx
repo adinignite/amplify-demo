@@ -23,10 +23,10 @@ export default function CardA(props) {
       {...getOverrideProps(overrides, "Flex")}
     >
       <Image
-        width="320px"
         height="400px"
         shrink="0"
         alignSelf="stretch"
+        objectFit="cover"
         position="relative"
         padding="0px 0px 0px 0px"
         {...getOverrideProps(overrides, "Flex.Image[0]")}
@@ -36,6 +36,7 @@ export default function CardA(props) {
         direction="column"
         shrink="0"
         alignSelf="stretch"
+        objectFit="cover"
         position="relative"
         padding="0px 0px 0px 0px"
         {...getOverrideProps(overrides, "Flex.Flex[0]")}
@@ -44,18 +45,19 @@ export default function CardA(props) {
           fontFamily="Inter"
           fontSize="16px"
           fontWeight="400"
-          color="rgba(13.000000175088644,26.000000350177288,38.0000015348196,1)"
+          color="rgba(13,26,38,1)"
           lineHeight="24px"
           textAlign="left"
           display="flex"
           direction="column"
           justifyContent="flex-start"
-          letterSpacing="0.010000000000000009px"
-          width="320px"
+          letterSpacing="0.01px"
           shrink="0"
           alignSelf="stretch"
+          objectFit="cover"
           position="relative"
           padding="0px 0px 0px 0px"
+          whiteSpace="pre-wrap"
           children="Classic Long Sleeve T-Shirt"
           {...getOverrideProps(overrides, "Flex.Flex[0].Text[0]")}
         ></Text>
@@ -63,17 +65,18 @@ export default function CardA(props) {
           fontFamily="Inter"
           fontSize="14px"
           fontWeight="400"
-          color="rgba(48.000000938773155,64.00000378489494,80.00000283122063,1)"
+          color="rgba(48,64,80,1)"
           lineHeight="24px"
           textAlign="left"
           display="flex"
           direction="column"
           justifyContent="flex-start"
-          width="320px"
           shrink="0"
           alignSelf="stretch"
+          objectFit="cover"
           position="relative"
           padding="0px 0px 0px 0px"
+          whiteSpace="pre-wrap"
           children="$99"
           {...getOverrideProps(overrides, "Flex.Flex[0].Text[1]")}
         ></Text>

@@ -28,6 +28,7 @@ export default function FAQItem(props) {
         alignItems="center"
         shrink="0"
         alignSelf="stretch"
+        objectFit="cover"
         position="relative"
         padding="24px 24px 24px 24px"
         backgroundColor="rgba(255,255,255,1)"
@@ -54,11 +55,12 @@ export default function FAQItem(props) {
             display="flex"
             direction="column"
             justifyContent="flex-start"
-            width="1232px"
             shrink="0"
             alignSelf="stretch"
+            objectFit="cover"
             position="relative"
             padding="0px 0px 0px 0px"
+            whiteSpace="pre-wrap"
             children="What’s the company?"
             {...getOverrideProps(overrides, "Flex.Flex[0].Flex[0].Text[0]")}
           ></Text>
@@ -72,21 +74,22 @@ export default function FAQItem(props) {
             display="flex"
             direction="column"
             justifyContent="flex-start"
-            letterSpacing="0.010000000000000009px"
-            width="1232px"
+            letterSpacing="0.01px"
             shrink="0"
             alignSelf="stretch"
+            objectFit="cover"
             position="relative"
             padding="0px 0px 0px 0px"
+            whiteSpace="pre-wrap"
             children="A general overview that includes the name of the company, year it was founded and its goal. For example: Company was founded in 2019, with a goal to bring better products to every home across the US."
             {...getOverrideProps(overrides, "Flex.Flex[0].Flex[0].Text[1]")}
           ></Text>
         </Flex>
       </Flex>
       <Divider
-        width="1280px"
         shrink="0"
         alignSelf="stretch"
+        objectFit="cover"
         size="small"
         orientation="horizontal"
         {...getOverrideProps(overrides, "Flex.Divider[0]")}

@@ -16,35 +16,35 @@ export default function HeroLayout1(props) {
   const variants = [
     {
       overrides: {
-        "Flex.Flex[0].Flex[0].Text[0]": {},
-        "Flex.Flex[0].Flex[0].Flex[0].Text[0]": {},
-        "Flex.Flex[0].Flex[0].Flex[0].Text[1]": {},
-        "Flex.Flex[0].Flex[0].Flex[0]": {},
-        "Flex.Flex[0].Flex[0].Button[0]": {},
-        "Flex.Flex[0].Flex[0]": {},
-        "Flex.Flex[0]": {},
-        "Flex.Flex[1].Image[0]": {},
-        "Flex.Flex[1]": {},
-        Flex: {},
+        "LOREM IPSUM": {},
+        "Ut enim ad minim veniam quis nostrud": {},
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.":
+          {},
+        Message: {},
+        Button: {},
+        HeroMessage: {},
+        Left: {},
+        image: {},
+        Right: {},
+        HeroLayout1: {},
       },
       variantValues: { mode: "Light" },
     },
     {
       overrides: {
-        "Flex.Flex[0].Flex[0].Text[0]": { color: "rgba(255,255,255,1)" },
-        "Flex.Flex[0].Flex[0].Flex[0].Text[0]": {
+        "LOREM IPSUM": { color: "rgba(255,255,255,1)" },
+        "Ut enim ad minim veniam quis nostrud": {
           color: "rgba(255,255,255,1)",
         },
-        "Flex.Flex[0].Flex[0].Flex[0].Text[1]": {
-          color: "rgba(255,255,255,1)",
-        },
-        "Flex.Flex[0].Flex[0].Flex[0]": {},
-        "Flex.Flex[0].Flex[0].Button[0]": {},
-        "Flex.Flex[0].Flex[0]": {},
-        "Flex.Flex[0]": { backgroundColor: "rgba(0,0,0,1)" },
-        "Flex.Flex[1].Image[0]": { alignSelf: "stretch" },
-        "Flex.Flex[1]": {},
-        Flex: {},
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.":
+          { color: "rgba(255,255,255,1)" },
+        Message: {},
+        Button: {},
+        HeroMessage: {},
+        Left: { backgroundColor: "rgba(0,0,0,1)" },
+        image: { alignSelf: "stretch", objectFit: "cover" },
+        Right: {},
+        HeroLayout1: {},
       },
       variantValues: { mode: "Dark" },
     },
@@ -104,6 +104,7 @@ export default function HeroLayout1(props) {
           alignItems="center"
           shrink="0"
           alignSelf="stretch"
+          objectFit="cover"
           position="relative"
           padding="0px 0px 0px 0px"
           {...getOverrideProps(overrides, "Flex.Flex[0].Flex[0]")}
@@ -112,18 +113,19 @@ export default function HeroLayout1(props) {
             fontFamily="Inter"
             fontSize="16px"
             fontWeight="700"
-            color="rgba(13.000000175088644,26.000000350177288,38.0000015348196,1)"
+            color="rgba(13,26,38,1)"
             lineHeight="20px"
             textAlign="center"
             display="flex"
             direction="column"
             justifyContent="flex-start"
             letterSpacing="0.49px"
-            width="480px"
             shrink="0"
             alignSelf="stretch"
+            objectFit="cover"
             position="relative"
             padding="0px 0px 0px 0px"
+            whiteSpace="pre-wrap"
             children="LOREM IPSUM"
             {...getOverrideProps(overrides, "Flex.Flex[0].Flex[0].Text[0]")}
           ></Text>
@@ -134,6 +136,7 @@ export default function HeroLayout1(props) {
             alignItems="center"
             shrink="0"
             alignSelf="stretch"
+            objectFit="cover"
             position="relative"
             padding="0px 0px 0px 0px"
             {...getOverrideProps(overrides, "Flex.Flex[0].Flex[0].Flex[0]")}
@@ -142,17 +145,18 @@ export default function HeroLayout1(props) {
               fontFamily="Inter"
               fontSize="40px"
               fontWeight="700"
-              color="rgba(13.000000175088644,26.000000350177288,38.0000015348196,1)"
+              color="rgba(13,26,38,1)"
               lineHeight="48px"
               textAlign="center"
               display="flex"
               direction="column"
               justifyContent="flex-start"
-              width="480px"
               shrink="0"
               alignSelf="stretch"
+              objectFit="cover"
               position="relative"
               padding="0px 0px 0px 0px"
+              whiteSpace="pre-wrap"
               children="Ut enim ad minim veniam quis nostrud"
               {...getOverrideProps(
                 overrides,
@@ -163,18 +167,19 @@ export default function HeroLayout1(props) {
               fontFamily="Inter"
               fontSize="16px"
               fontWeight="400"
-              color="rgba(13.000000175088644,26.000000350177288,38.0000015348196,1)"
+              color="rgba(13,26,38,1)"
               lineHeight="24px"
               textAlign="center"
               display="flex"
               direction="column"
               justifyContent="flex-start"
-              letterSpacing="0.010000000000000009px"
-              width="480px"
+              letterSpacing="0.01px"
               shrink="0"
               alignSelf="stretch"
+              objectFit="cover"
               position="relative"
               padding="0px 0px 0px 0px"
+              whiteSpace="pre-wrap"
               children="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
               {...getOverrideProps(
                 overrides,
@@ -188,7 +193,6 @@ export default function HeroLayout1(props) {
             width="206px"
             size="large"
             variation="primary"
-            children="Primary Button"
             {...getOverrideProps(overrides, "Flex.Flex[0].Flex[0].Button[0]")}
           ></Button>
         </Flex>

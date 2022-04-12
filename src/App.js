@@ -8,7 +8,6 @@ import { NewHomes, NavBar, MarketingFooter } from './ui-components';
 
 Amplify.configure(awsconfig);
 
-
 function App() {
   return (
     <AmplifyProvider>
@@ -17,7 +16,7 @@ function App() {
         <h1>New Homes</h1>
         <NewHomes  />
       </div>
-      <MarketingFooter/> 
+      <MarketingFooter />
     </AmplifyProvider>
   );
 }

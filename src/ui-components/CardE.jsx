@@ -40,18 +40,8 @@ export default function CardE(props) {
           display="flex"
           top="0px"
           left="0px"
-          fontFamily="Inter"
-          fontWeight="700"
-          fontSize="16px"
-          color="rgba(13.000000175088644,26.000000350177288,38.0000015348196,1)"
-          textAlign="left"
-          lineHeight="20px"
-          direction="column"
-          justifyContent="flex-start"
-          letterSpacing="0.49px"
           size="small"
           variation="default"
-          children="New"
           {...getOverrideProps(overrides, "Flex.View[0].Badge[0]")}
         ></Badge>
         <Flex
@@ -67,7 +57,7 @@ export default function CardE(props) {
             fontFamily="Inter"
             fontSize="16px"
             fontWeight="700"
-            color="rgba(13.000000175088644,26.000000350177288,38.0000015348196,1)"
+            color="rgba(13,26,38,1)"
             lineHeight="24px"
             textAlign="left"
             display="flex"
@@ -76,6 +66,7 @@ export default function CardE(props) {
             shrink="0"
             position="relative"
             padding="0px 0px 0px 0px"
+            whiteSpace="pre-wrap"
             children="T-Shirt"
             {...getOverrideProps(overrides, "Flex.View[0].Flex[0].Text[0]")}
           ></Text>
@@ -83,16 +74,17 @@ export default function CardE(props) {
             fontFamily="Inter"
             fontSize="16px"
             fontWeight="400"
-            color="rgba(48.000000938773155,64.00000378489494,80.00000283122063,1)"
+            color="rgba(48,64,80,1)"
             lineHeight="24px"
             textAlign="left"
             display="flex"
             direction="column"
             justifyContent="flex-start"
-            letterSpacing="0.010000000000000009px"
+            letterSpacing="0.01px"
             shrink="0"
             position="relative"
             padding="0px 0px 0px 0px"
+            whiteSpace="pre-wrap"
             children="Classic Long Sleeve"
             {...getOverrideProps(overrides, "Flex.View[0].Flex[0].Text[1]")}
           ></Text>
@@ -101,7 +93,7 @@ export default function CardE(props) {
           fontFamily="Inter"
           fontSize="16px"
           fontWeight="700"
-          color="rgba(13.000000175088644,26.000000350177288,38.0000015348196,1)"
+          color="rgba(13,26,38,1)"
           lineHeight="24px"
           textAlign="right"
           display="flex"
@@ -111,6 +103,7 @@ export default function CardE(props) {
           bottom="0px"
           right="0px"
           padding="0px 0px 0px 0px"
+          whiteSpace="pre-wrap"
           children="$99"
           {...getOverrideProps(overrides, "Flex.View[0].Text[0]")}
         ></Text>

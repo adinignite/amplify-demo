@@ -30,6 +30,7 @@ export default function HeroLayout4(props) {
         justifyContent="center"
         shrink="0"
         alignSelf="stretch"
+        objectFit="cover"
         position="relative"
         padding="0px 0px 0px 0px"
         {...getOverrideProps(overrides, "Flex.Flex[0]")}
@@ -45,11 +46,12 @@ export default function HeroLayout4(props) {
           direction="column"
           justifyContent="flex-start"
           letterSpacing="0.49px"
-          width="1120px"
           shrink="0"
           alignSelf="stretch"
+          objectFit="cover"
           position="relative"
           padding="0px 0px 0px 0px"
+          whiteSpace="pre-wrap"
           children="LOREM IPSUM"
           {...getOverrideProps(overrides, "Flex.Flex[0].Text[0]")}
         ></Text>
@@ -63,11 +65,12 @@ export default function HeroLayout4(props) {
           display="flex"
           direction="column"
           justifyContent="flex-start"
-          width="1120px"
           shrink="0"
           alignSelf="stretch"
+          objectFit="cover"
           position="relative"
           padding="0px 0px 0px 0px"
+          whiteSpace="pre-wrap"
           children="Ut enim ad minim veniam quis nostrud"
           {...getOverrideProps(overrides, "Flex.Flex[0].Text[1]")}
         ></Text>
@@ -81,11 +84,12 @@ export default function HeroLayout4(props) {
           display="flex"
           direction="column"
           justifyContent="flex-start"
-          width="1120px"
           shrink="0"
           alignSelf="stretch"
+          objectFit="cover"
           position="relative"
           padding="0px 0px 0px 0px"
+          whiteSpace="pre-wrap"
           children="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
           {...getOverrideProps(overrides, "Flex.Flex[0].Text[2]")}
         ></Text>
@@ -104,7 +108,7 @@ export default function HeroLayout4(props) {
             shrink="0"
             height="36px"
             size="default"
-            labelHidden="true"
+            labelHidden={true}
             variation="default"
             {...getOverrideProps(
               overrides,
@@ -118,7 +122,6 @@ export default function HeroLayout4(props) {
             height="36px"
             size="default"
             variation="primary"
-            children="Primary Button"
             {...getOverrideProps(overrides, "Flex.Flex[0].Flex[0].Button[0]")}
           ></Button>
         </Flex>
@@ -132,11 +135,12 @@ export default function HeroLayout4(props) {
           display="flex"
           direction="column"
           justifyContent="flex-start"
-          letterSpacing="0.010000000000000009px"
+          letterSpacing="0.01px"
           width="566px"
           shrink="0"
           position="relative"
           padding="0px 0px 0px 0px"
+          whiteSpace="pre-wrap"
           children="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
           {...getOverrideProps(overrides, "Flex.Flex[0].Text[3]")}
         ></Text>

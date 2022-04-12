@@ -7,14 +7,7 @@
 /* eslint-disable */
 import React from "react";
 import { getOverrideProps } from "@aws-amplify/ui-react/internal";
-import {
-  Divider,
-  Flex,
-  IconHome,
-  IconSettings,
-  Text,
-  View,
-} from "@aws-amplify/ui-react";
+import { Divider, Flex, Icon, Text, View } from "@aws-amplify/ui-react";
 export default function SideBar(props) {
   const { overrides: overridesProp, ...rest } = props;
   const overrides = { ...overridesProp };
@@ -49,18 +42,19 @@ export default function SideBar(props) {
           grow="1"
           basis="585px"
           alignSelf="stretch"
+          objectFit="cover"
           position="relative"
           padding="0px 32px 0px 32px"
           {...getOverrideProps(overrides, "Flex.Flex[0].Flex[0]")}
         >
           <View
-            width="321px"
             height="80px"
             shrink="0"
             alignSelf="stretch"
+            objectFit="cover"
             position="relative"
             padding="0px 0px 0px 0px"
-            backgroundColor="rgba(233.00000131130219,235.0000011920929,236.00000113248825,1)"
+            backgroundColor="rgba(233,235,236,1)"
             {...getOverrideProps(overrides, "Flex.Flex[0].Flex[0].View[0]")}
           ></View>
           <Flex
@@ -76,7 +70,7 @@ export default function SideBar(props) {
               fontFamily="Inter"
               fontSize="16px"
               fontWeight="700"
-              color="rgba(13.000000175088644,26.000000350177288,38.0000015348196,1)"
+              color="rgba(13,26,38,1)"
               lineHeight="20px"
               textAlign="left"
               display="flex"
@@ -86,6 +80,7 @@ export default function SideBar(props) {
               shrink="0"
               position="relative"
               padding="0px 0px 0px 0px"
+              whiteSpace="pre-wrap"
               children="ORGANIZATION"
               {...getOverrideProps(
                 overrides,
@@ -105,35 +100,35 @@ export default function SideBar(props) {
                 "Flex.Flex[0].Flex[0].Flex[0].Flex[0]"
               )}
             >
-              <IconHome
+              <Icon
                 width="24px"
                 height="24px"
                 shrink="0"
                 overflow="hidden"
                 position="relative"
                 padding="0px 0px 0px 0px"
-                color="rgba(13.000000175088644,26.000000350177288,38.0000015348196,1)"
                 type="home"
                 fontSize="24px"
                 {...getOverrideProps(
                   overrides,
-                  "Flex.Flex[0].Flex[0].Flex[0].Flex[0].IconHome[0]"
+                  "Flex.Flex[0].Flex[0].Flex[0].Flex[0].Icon[0]"
                 )}
-              ></IconHome>
+              ></Icon>
               <Text
                 fontFamily="Inter"
                 fontSize="16px"
                 fontWeight="400"
-                color="rgba(13.000000175088644,26.000000350177288,38.0000015348196,1)"
+                color="rgba(13,26,38,1)"
                 lineHeight="24px"
                 textAlign="left"
                 display="flex"
                 direction="column"
                 justifyContent="flex-start"
-                letterSpacing="0.010000000000000009px"
+                letterSpacing="0.01px"
                 shrink="0"
                 position="relative"
                 padding="0px 0px 0px 0px"
+                whiteSpace="pre-wrap"
                 children="Lorem Ipsum"
                 {...getOverrideProps(
                   overrides,
@@ -154,35 +149,35 @@ export default function SideBar(props) {
                 "Flex.Flex[0].Flex[0].Flex[0].Flex[1]"
               )}
             >
-              <IconHome
+              <Icon
                 width="24px"
                 height="24px"
                 shrink="0"
                 overflow="hidden"
                 position="relative"
                 padding="0px 0px 0px 0px"
-                color="rgba(13.000000175088644,26.000000350177288,38.0000015348196,1)"
                 type="home"
                 fontSize="24px"
                 {...getOverrideProps(
                   overrides,
-                  "Flex.Flex[0].Flex[0].Flex[0].Flex[1].IconHome[0]"
+                  "Flex.Flex[0].Flex[0].Flex[0].Flex[1].Icon[0]"
                 )}
-              ></IconHome>
+              ></Icon>
               <Text
                 fontFamily="Inter"
                 fontSize="16px"
                 fontWeight="400"
-                color="rgba(13.000000175088644,26.000000350177288,38.0000015348196,1)"
+                color="rgba(13,26,38,1)"
                 lineHeight="24px"
                 textAlign="left"
                 display="flex"
                 direction="column"
                 justifyContent="flex-start"
-                letterSpacing="0.010000000000000009px"
+                letterSpacing="0.01px"
                 shrink="0"
                 position="relative"
                 padding="0px 0px 0px 0px"
+                whiteSpace="pre-wrap"
                 children="Lorem Ipsum"
                 {...getOverrideProps(
                   overrides,
@@ -204,7 +199,7 @@ export default function SideBar(props) {
               fontFamily="Inter"
               fontSize="16px"
               fontWeight="700"
-              color="rgba(13.000000175088644,26.000000350177288,38.0000015348196,1)"
+              color="rgba(13,26,38,1)"
               lineHeight="20px"
               textAlign="left"
               display="flex"
@@ -214,6 +209,7 @@ export default function SideBar(props) {
               shrink="0"
               position="relative"
               padding="0px 0px 0px 0px"
+              whiteSpace="pre-wrap"
               children="ORGANIZATION"
               {...getOverrideProps(
                 overrides,
@@ -245,35 +241,35 @@ export default function SideBar(props) {
                   "Flex.Flex[0].Flex[0].Flex[1].Flex[0].Flex[0]"
                 )}
               >
-                <IconHome
+                <Icon
                   width="24px"
                   height="24px"
                   shrink="0"
                   overflow="hidden"
                   position="relative"
                   padding="0px 0px 0px 0px"
-                  color="rgba(13.000000175088644,26.000000350177288,38.0000015348196,1)"
                   type="home"
                   fontSize="24px"
                   {...getOverrideProps(
                     overrides,
-                    "Flex.Flex[0].Flex[0].Flex[1].Flex[0].Flex[0].IconHome[0]"
+                    "Flex.Flex[0].Flex[0].Flex[1].Flex[0].Flex[0].Icon[0]"
                   )}
-                ></IconHome>
+                ></Icon>
                 <Text
                   fontFamily="Inter"
                   fontSize="16px"
                   fontWeight="400"
-                  color="rgba(13.000000175088644,26.000000350177288,38.0000015348196,1)"
+                  color="rgba(13,26,38,1)"
                   lineHeight="24px"
                   textAlign="left"
                   display="flex"
                   direction="column"
                   justifyContent="flex-start"
-                  letterSpacing="0.010000000000000009px"
+                  letterSpacing="0.01px"
                   shrink="0"
                   position="relative"
                   padding="0px 0px 0px 0px"
+                  whiteSpace="pre-wrap"
                   children="Lorem Ipsum"
                   {...getOverrideProps(
                     overrides,
@@ -294,35 +290,35 @@ export default function SideBar(props) {
                   "Flex.Flex[0].Flex[0].Flex[1].Flex[0].Flex[1]"
                 )}
               >
-                <IconHome
+                <Icon
                   width="24px"
                   height="24px"
                   shrink="0"
                   overflow="hidden"
                   position="relative"
                   padding="0px 0px 0px 0px"
-                  color="rgba(13.000000175088644,26.000000350177288,38.0000015348196,1)"
                   type="home"
                   fontSize="24px"
                   {...getOverrideProps(
                     overrides,
-                    "Flex.Flex[0].Flex[0].Flex[1].Flex[0].Flex[1].IconHome[0]"
+                    "Flex.Flex[0].Flex[0].Flex[1].Flex[0].Flex[1].Icon[0]"
                   )}
-                ></IconHome>
+                ></Icon>
                 <Text
                   fontFamily="Inter"
                   fontSize="16px"
                   fontWeight="400"
-                  color="rgba(13.000000175088644,26.000000350177288,38.0000015348196,1)"
+                  color="rgba(13,26,38,1)"
                   lineHeight="24px"
                   textAlign="left"
                   display="flex"
                   direction="column"
                   justifyContent="flex-start"
-                  letterSpacing="0.010000000000000009px"
+                  letterSpacing="0.01px"
                   shrink="0"
                   position="relative"
                   padding="0px 0px 0px 0px"
+                  whiteSpace="pre-wrap"
                   children="Lorem Ipsum"
                   {...getOverrideProps(
                     overrides,
@@ -343,35 +339,35 @@ export default function SideBar(props) {
                   "Flex.Flex[0].Flex[0].Flex[1].Flex[0].Flex[2]"
                 )}
               >
-                <IconHome
+                <Icon
                   width="24px"
                   height="24px"
                   shrink="0"
                   overflow="hidden"
                   position="relative"
                   padding="0px 0px 0px 0px"
-                  color="rgba(13.000000175088644,26.000000350177288,38.0000015348196,1)"
                   type="home"
                   fontSize="24px"
                   {...getOverrideProps(
                     overrides,
-                    "Flex.Flex[0].Flex[0].Flex[1].Flex[0].Flex[2].IconHome[0]"
+                    "Flex.Flex[0].Flex[0].Flex[1].Flex[0].Flex[2].Icon[0]"
                   )}
-                ></IconHome>
+                ></Icon>
                 <Text
                   fontFamily="Inter"
                   fontSize="16px"
                   fontWeight="400"
-                  color="rgba(13.000000175088644,26.000000350177288,38.0000015348196,1)"
+                  color="rgba(13,26,38,1)"
                   lineHeight="24px"
                   textAlign="left"
                   display="flex"
                   direction="column"
                   justifyContent="flex-start"
-                  letterSpacing="0.010000000000000009px"
+                  letterSpacing="0.01px"
                   shrink="0"
                   position="relative"
                   padding="0px 0px 0px 0px"
+                  whiteSpace="pre-wrap"
                   children="Lorem Ipsum"
                   {...getOverrideProps(
                     overrides,
@@ -392,35 +388,35 @@ export default function SideBar(props) {
                   "Flex.Flex[0].Flex[0].Flex[1].Flex[0].Flex[3]"
                 )}
               >
-                <IconHome
+                <Icon
                   width="24px"
                   height="24px"
                   shrink="0"
                   overflow="hidden"
                   position="relative"
                   padding="0px 0px 0px 0px"
-                  color="rgba(13.000000175088644,26.000000350177288,38.0000015348196,1)"
                   type="home"
                   fontSize="24px"
                   {...getOverrideProps(
                     overrides,
-                    "Flex.Flex[0].Flex[0].Flex[1].Flex[0].Flex[3].IconHome[0]"
+                    "Flex.Flex[0].Flex[0].Flex[1].Flex[0].Flex[3].Icon[0]"
                   )}
-                ></IconHome>
+                ></Icon>
                 <Text
                   fontFamily="Inter"
                   fontSize="16px"
                   fontWeight="400"
-                  color="rgba(13.000000175088644,26.000000350177288,38.0000015348196,1)"
+                  color="rgba(13,26,38,1)"
                   lineHeight="24px"
                   textAlign="left"
                   display="flex"
                   direction="column"
                   justifyContent="flex-start"
-                  letterSpacing="0.010000000000000009px"
+                  letterSpacing="0.01px"
                   shrink="0"
                   position="relative"
                   padding="0px 0px 0px 0px"
+                  whiteSpace="pre-wrap"
                   children="Lorem Ipsum"
                   {...getOverrideProps(
                     overrides,
@@ -441,35 +437,35 @@ export default function SideBar(props) {
                   "Flex.Flex[0].Flex[0].Flex[1].Flex[0].Flex[4]"
                 )}
               >
-                <IconHome
+                <Icon
                   width="24px"
                   height="24px"
                   shrink="0"
                   overflow="hidden"
                   position="relative"
                   padding="0px 0px 0px 0px"
-                  color="rgba(13.000000175088644,26.000000350177288,38.0000015348196,1)"
                   type="home"
                   fontSize="24px"
                   {...getOverrideProps(
                     overrides,
-                    "Flex.Flex[0].Flex[0].Flex[1].Flex[0].Flex[4].IconHome[0]"
+                    "Flex.Flex[0].Flex[0].Flex[1].Flex[0].Flex[4].Icon[0]"
                   )}
-                ></IconHome>
+                ></Icon>
                 <Text
                   fontFamily="Inter"
                   fontSize="16px"
                   fontWeight="400"
-                  color="rgba(13.000000175088644,26.000000350177288,38.0000015348196,1)"
+                  color="rgba(13,26,38,1)"
                   lineHeight="24px"
                   textAlign="left"
                   display="flex"
                   direction="column"
                   justifyContent="flex-start"
-                  letterSpacing="0.010000000000000009px"
+                  letterSpacing="0.01px"
                   shrink="0"
                   position="relative"
                   padding="0px 0px 0px 0px"
+                  whiteSpace="pre-wrap"
                   children="Lorem Ipsum"
                   {...getOverrideProps(
                     overrides,
@@ -490,35 +486,35 @@ export default function SideBar(props) {
                   "Flex.Flex[0].Flex[0].Flex[1].Flex[0].Flex[5]"
                 )}
               >
-                <IconHome
+                <Icon
                   width="24px"
                   height="24px"
                   shrink="0"
                   overflow="hidden"
                   position="relative"
                   padding="0px 0px 0px 0px"
-                  color="rgba(13.000000175088644,26.000000350177288,38.0000015348196,1)"
                   type="home"
                   fontSize="24px"
                   {...getOverrideProps(
                     overrides,
-                    "Flex.Flex[0].Flex[0].Flex[1].Flex[0].Flex[5].IconHome[0]"
+                    "Flex.Flex[0].Flex[0].Flex[1].Flex[0].Flex[5].Icon[0]"
                   )}
-                ></IconHome>
+                ></Icon>
                 <Text
                   fontFamily="Inter"
                   fontSize="16px"
                   fontWeight="400"
-                  color="rgba(13.000000175088644,26.000000350177288,38.0000015348196,1)"
+                  color="rgba(13,26,38,1)"
                   lineHeight="24px"
                   textAlign="left"
                   display="flex"
                   direction="column"
                   justifyContent="flex-start"
-                  letterSpacing="0.010000000000000009px"
+                  letterSpacing="0.01px"
                   shrink="0"
                   position="relative"
                   padding="0px 0px 0px 0px"
+                  whiteSpace="pre-wrap"
                   children="Lorem Ipsum"
                   {...getOverrideProps(
                     overrides,
@@ -539,35 +535,35 @@ export default function SideBar(props) {
                   "Flex.Flex[0].Flex[0].Flex[1].Flex[0].Flex[6]"
                 )}
               >
-                <IconHome
+                <Icon
                   width="24px"
                   height="24px"
                   shrink="0"
                   overflow="hidden"
                   position="relative"
                   padding="0px 0px 0px 0px"
-                  color="rgba(13.000000175088644,26.000000350177288,38.0000015348196,1)"
                   type="home"
                   fontSize="24px"
                   {...getOverrideProps(
                     overrides,
-                    "Flex.Flex[0].Flex[0].Flex[1].Flex[0].Flex[6].IconHome[0]"
+                    "Flex.Flex[0].Flex[0].Flex[1].Flex[0].Flex[6].Icon[0]"
                   )}
-                ></IconHome>
+                ></Icon>
                 <Text
                   fontFamily="Inter"
                   fontSize="16px"
                   fontWeight="400"
-                  color="rgba(13.000000175088644,26.000000350177288,38.0000015348196,1)"
+                  color="rgba(13,26,38,1)"
                   lineHeight="24px"
                   textAlign="left"
                   display="flex"
                   direction="column"
                   justifyContent="flex-start"
-                  letterSpacing="0.010000000000000009px"
+                  letterSpacing="0.01px"
                   shrink="0"
                   position="relative"
                   padding="0px 0px 0px 0px"
+                  whiteSpace="pre-wrap"
                   children="Lorem Ipsum"
                   {...getOverrideProps(
                     overrides,
@@ -588,35 +584,35 @@ export default function SideBar(props) {
                   "Flex.Flex[0].Flex[0].Flex[1].Flex[0].Flex[7]"
                 )}
               >
-                <IconHome
+                <Icon
                   width="24px"
                   height="24px"
                   shrink="0"
                   overflow="hidden"
                   position="relative"
                   padding="0px 0px 0px 0px"
-                  color="rgba(13.000000175088644,26.000000350177288,38.0000015348196,1)"
                   type="home"
                   fontSize="24px"
                   {...getOverrideProps(
                     overrides,
-                    "Flex.Flex[0].Flex[0].Flex[1].Flex[0].Flex[7].IconHome[0]"
+                    "Flex.Flex[0].Flex[0].Flex[1].Flex[0].Flex[7].Icon[0]"
                   )}
-                ></IconHome>
+                ></Icon>
                 <Text
                   fontFamily="Inter"
                   fontSize="16px"
                   fontWeight="400"
-                  color="rgba(13.000000175088644,26.000000350177288,38.0000015348196,1)"
+                  color="rgba(13,26,38,1)"
                   lineHeight="24px"
                   textAlign="left"
                   display="flex"
                   direction="column"
                   justifyContent="flex-start"
-                  letterSpacing="0.010000000000000009px"
+                  letterSpacing="0.01px"
                   shrink="0"
                   position="relative"
                   padding="0px 0px 0px 0px"
+                  whiteSpace="pre-wrap"
                   children="Lorem Ipsum"
                   {...getOverrideProps(
                     overrides,
@@ -634,14 +630,15 @@ export default function SideBar(props) {
           justifyContent="flex-end"
           shrink="0"
           alignSelf="stretch"
+          objectFit="cover"
           position="relative"
           padding="0px 0px 0px 0px"
           {...getOverrideProps(overrides, "Flex.Flex[0].Flex[1]")}
         >
           <Divider
-            width="385px"
             shrink="0"
             alignSelf="stretch"
+            objectFit="cover"
             size="small"
             orientation="horizontal"
             {...getOverrideProps(overrides, "Flex.Flex[0].Flex[1].Divider[0]")}
@@ -652,6 +649,7 @@ export default function SideBar(props) {
             alignItems="center"
             shrink="0"
             alignSelf="stretch"
+            objectFit="cover"
             position="relative"
             padding="0px 32px 0px 32px"
             {...getOverrideProps(overrides, "Flex.Flex[0].Flex[1].Flex[0]")}
@@ -678,7 +676,7 @@ export default function SideBar(props) {
                 position="relative"
                 borderRadius="40px"
                 padding="0px 0px 0px 0px"
-                backgroundColor="rgba(196.00000351667404,196.00000351667404,196.00000351667404,1)"
+                backgroundColor="rgba(196,196,196,1)"
                 {...getOverrideProps(
                   overrides,
                   "Flex.Flex[0].Flex[1].Flex[0].Flex[0].View[0]"
@@ -701,18 +699,19 @@ export default function SideBar(props) {
                   fontFamily="Inter"
                   fontSize="16px"
                   fontWeight="400"
-                  color="rgba(13.000000175088644,26.000000350177288,38.0000015348196,1)"
+                  color="rgba(13,26,38,1)"
                   lineHeight="24px"
                   textAlign="left"
                   display="flex"
                   direction="column"
                   justifyContent="flex-start"
-                  letterSpacing="0.010000000000000009px"
-                  width="100px"
+                  letterSpacing="0.01px"
                   shrink="0"
                   alignSelf="stretch"
+                  objectFit="cover"
                   position="relative"
                   padding="0px 0px 0px 0px"
+                  whiteSpace="pre-wrap"
                   children="Lorem Ipsum"
                   {...getOverrideProps(
                     overrides,
@@ -723,17 +722,18 @@ export default function SideBar(props) {
                   fontFamily="Inter"
                   fontSize="14px"
                   fontWeight="400"
-                  color="rgba(13.000000175088644,26.000000350177288,38.0000015348196,1)"
+                  color="rgba(13,26,38,1)"
                   lineHeight="24px"
                   textAlign="left"
                   display="flex"
                   direction="column"
                   justifyContent="flex-start"
-                  width="100px"
                   shrink="0"
                   alignSelf="stretch"
+                  objectFit="cover"
                   position="relative"
                   padding="0px 0px 0px 0px"
+                  whiteSpace="pre-wrap"
                   children="Lorem Ipsum"
                   {...getOverrideProps(
                     overrides,
@@ -742,21 +742,20 @@ export default function SideBar(props) {
                 ></Text>
               </Flex>
             </Flex>
-            <IconSettings
+            <Icon
               width="24px"
               height="24px"
               shrink="0"
               overflow="hidden"
               position="relative"
               padding="0px 0px 0px 0px"
-              color="rgba(13.000000175088644,26.000000350177288,38.0000015348196,1)"
               type="settings"
               fontSize="24px"
               {...getOverrideProps(
                 overrides,
-                "Flex.Flex[0].Flex[1].Flex[0].IconSettings[0]"
+                "Flex.Flex[0].Flex[1].Flex[0].Icon[0]"
               )}
-            ></IconSettings>
+            ></Icon>
           </Flex>
         </Flex>
       </Flex>
